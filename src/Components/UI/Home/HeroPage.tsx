@@ -7,11 +7,17 @@ const HeroPage = () => {
     <div className="">
       <div className="flex ">
         <div className=" w-[50%] ">
-          <Image src={heroImage} alt="Hero Image" width={720} height={580} />
+          <Image
+            src={heroImage}
+            alt="Hero Image"
+            width={720}
+            height={580}
+            className="rounded-3xl"
+          />
         </div>
         <div className="0 w-[50%] flex flex-col items-center justify-center">
           <h1 className="text-5xl font-bold mb-4">
-            Practice Next JS 14 All Features
+            Practice All Features of Next js
           </h1>
           <h2 className="text-4xl font-bold mb-4">Lead a Error free life 😇</h2>
         </div>

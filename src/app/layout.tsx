@@ -18,10 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={` bg-black text-white ${inter.className}`}>
         <Navbar />
         <div className="0 container mx-auto">{children}</div>
-
         <Footer />
       </body>
     </html>
