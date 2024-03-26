@@ -1,11 +1,28 @@
+"use client";
+
 import User from "@/utils/Types/userType";
 import Link from "next/link";
 
-const UsingSSG = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users", {
-    cache: "force-cache",
-  });
-  const users: User[] = await res.json();
+import { useEffect, useState } from "react";
+
+const UsingISR = () => {
+  const [users, setUsers] = useState<User[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "https://jsonplaceholder.typicode.com/users"
+        );
+        const userData: User[] = await response.json();
+        setUsers(userData);
+      } catch (error) {
+        console.error("Error fetching user data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <div className="grid grid-cols-4 gap-4 mt-10 mb-20">
@@ -34,7 +51,6 @@ const UsingSSG = async () => {
                 <strong>Website:</strong> {user.website}
               </p>
             </div>
-           
           </Link>
         </div>
       ))}
@@ -42,4 +58,4 @@ const UsingSSG = async () => {
   );
 };
 
-export default UsingSSG;
+export default UsingISR;

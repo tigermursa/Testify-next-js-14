@@ -1,6 +1,6 @@
 const VideoPage = () => {
   return (
-    <div className="h-[900px] mt-10">
+    <div className="border-8 rounded-md">
       <iframe
         width="720"
         height="480"

@@ -1,9 +1,11 @@
 import User from "@/utils/Types/userType";
 import Link from "next/link";
 
-const UsingSSG = async () => {
+const UsingISR = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users", {
-    cache: "force-cache",
+    next: {
+      revalidate: 10,
+    },
   });
   const users: User[] = await res.json();
 
@@ -34,7 +36,6 @@ const UsingSSG = async () => {
                 <strong>Website:</strong> {user.website}
               </p>
             </div>
-           
           </Link>
         </div>
       ))}
@@ -42,4 +43,4 @@ const UsingSSG = async () => {
   );
 };
 
-export default UsingSSG;
+export default UsingISR;
