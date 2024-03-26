@@ -4,7 +4,7 @@ import Link from "next/link";
 const UsingISR = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users", {
     next: {
-      revalidate: 10,
+      revalidate: 90,
     },
   });
   const users: User[] = await res.json();

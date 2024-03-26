@@ -67,6 +67,10 @@ const SingleUserSSG: React.FC<SingleUserSSGProps> = async ({ params }) => {
 
 export default SingleUserSSG;
 
+
+
+
+
 export async function generateStaticParams() {
   const res = await fetch(`https://jsonplaceholder.typicode.com/users`);
   const user: User[] = await res.json();

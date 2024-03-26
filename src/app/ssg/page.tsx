@@ -1,3 +1,6 @@
+import Image from "next/image";
+import ssgImg from "@/assets/how-we-make-ssg.png";
+import renderings from "@/assets/all-the-renderings after build.png";
 const SSG = () => {
   return (
     <div className="mt-10 mb-20 flex flex-col justify-center items-center">
@@ -66,6 +69,14 @@ const SSG = () => {
           logic, SSG might not be the best choice.
         </li>
       </ul>
+      <h1 className="text-3xl font-semibold text-center mt-10 mb-10 ">
+        That is how we can make a Dynamic page to SSG
+      </h1>
+      <Image src={ssgImg} alt="how we can make dynamic page SSG" />
+      <h1 className="text-3xl font-semibold text-center mt-12 mb-10 ">
+        After the build there are 3 types renderings showing
+      </h1>
+      <Image src={renderings} alt="after a npm run build in this page" />
     </div>
   );
 };
