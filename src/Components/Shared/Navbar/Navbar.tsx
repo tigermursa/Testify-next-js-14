@@ -14,7 +14,11 @@ const Navbar = () => {
 
   return (
     <nav className="bg-black flex justify-between items-center h-[50px] px-5 text-gray-300 border-b ">
-      <h1 className="text-3xl font-bold hover:text-white cursor-pointer">Testify🎨</h1>
+      <Link href={"/"}>
+        <h1 className="text-3xl font-bold hover:text-white cursor-pointer">
+          Testify🎨
+        </h1>
+      </Link>
       <ul className="flex gap-4 font-semibold">
         {routes.map((route, index) => (
           <div key={index}>
