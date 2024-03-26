@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const HeroPage = () => {
   return (
-    <div className="">
+    <div className="mt-12">
       <div className="flex ">
         <div className=" w-[50%] ">
           <Image
