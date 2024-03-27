@@ -27,3 +27,5 @@ const WhyNextJs = () => {
 };
 
 export default WhyNextJs;
+
+
