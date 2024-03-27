@@ -12,6 +12,6 @@
 10. Added next js optimized fonts
 11. Added next js optimizes Image component ✔
 
-# LIVE LINK : https://testify-ikxdx6gd9-tigermursa.vercel.app/
+# LIVE LINK : https://testify-bnr18qvq9-tigermursa.vercel.app/
 
 ### warning!: This website is not responsive yet

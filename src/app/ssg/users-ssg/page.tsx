@@ -8,7 +8,7 @@ const UsingSSG = async () => {
   const users: User[] = await res.json();
 
   return (
-    <div className="grid grid-cols-4 gap-4 mt-10 mb-20">
+    <div className="grid grid-cols-4 gap-4 mt-10 mb-72">
       {/* Grid container with 4 columns */}
       {users.map((user) => (
         <div
