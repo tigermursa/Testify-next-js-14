@@ -4,7 +4,7 @@ const Navbar = () => {
   // Define array of route paths
   const routes = [
     { path: "/", label: "Home" },
-    { path: "/about", label: "Why Next-js?" },
+    { path: "/why", label: "Why Next-js?" },
     { path: "/history", label: "History" },
     { path: "/ssg", label: "SSG" },
     { path: "/ssr", label: "SSR" },
