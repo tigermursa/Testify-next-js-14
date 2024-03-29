@@ -9,7 +9,7 @@ const edu = Edu_QLD_Beginner({
 const HeroPage = () => {
   return (
     <div className="mt-12">
-      <div className="flex">
+      <div className="flex flex-col md:flex-row ">
         <div className=" w-[50%] h-[550px] ">
           <VideoPage />
         </div>

@@ -15,6 +15,6 @@
 13. Added next js Error page ✔
 14. Added next js loading page ✔
 
-# LIVE LINK : https://testify-bnr18qvq9-tigermursa.vercel.app/
+# LIVE LINK : https://testify-iyapd4bas-tigermursa.vercel.app/
 
 ### warning!: This website is not responsive yet
