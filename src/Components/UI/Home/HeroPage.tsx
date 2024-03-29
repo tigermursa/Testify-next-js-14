@@ -1,8 +1,11 @@
 import React from "react";
-import heroImage from "@/assets/hero-image.jpg";
-import Image from "next/image";
 import VideoPage from "./HeroVideo";
-
+import { Edu_QLD_Beginner } from "next/font/google";
+const edu = Edu_QLD_Beginner({
+  weight: "700",
+  subsets: ["latin"],
+  display: "swap",
+});
 const HeroPage = () => {
   return (
     <div className="mt-12">
@@ -10,8 +13,10 @@ const HeroPage = () => {
         <div className=" w-[50%] h-[550px] ">
           <VideoPage />
         </div>
-        <div className="0 w-[50%] flex flex-col items-center justify-center">
-          <h1 className="text-5xl font-bold mb-4">
+        <div
+          className={`0 w-[50%] flex flex-col items-center justify-center ${edu.className}`}
+        >
+          <h1 className={`text-5xl font-bold mb-4  `}>
             Practice All Features of Next js
           </h1>
           <h2 className="text-4xl font-bold mb-4">Lead a Error free life 😇</h2>

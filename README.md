@@ -9,8 +9,11 @@
 7. Dynamic Routes implemented ✔
 8. Embedded YouTube Video on the Page ✔
 9. Successfully Hosted on Vercel ✔
-10. Added next js optimized fonts
+10. Added next js optimized fonts ✔
 11. Added next js optimizes Image component ✔
+12. Added next js Not Found page ✔
+13. Added next js Error page ✔
+14. Added next js loading page ✔
 
 # LIVE LINK : https://testify-bnr18qvq9-tigermursa.vercel.app/
 
